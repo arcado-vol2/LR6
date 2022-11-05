@@ -19,62 +19,46 @@
       ![image](screenshoots/3.PNG)	
 6. Добавляем файл через интерфейс GitHub. Подтягиваем изменения в локальный репозиторий.
    - Подтягиваем изменения при помощи команды `git pull`\
-    ![image](screenshoos/4.PNG)
-    ![image](screenshots/5.PNG)
-    ![image](screenshots/6.PNG)
-    ![image](screenshots/7.PNG)
+    ![image](screenshoots/4.PNG)
+    ![image](screenshoots/5.PNG)
+    ![image](screenshoots/6.PNG)
+    ![image](screenshoots/7.PNG)
 7. Получаем историю операций для каждой из веток
-   - Получаем историю операций для ветки, выполняя команду
-    `git log`
-    ![image](screenshots/7.1.PNG)
-   - Меняем текущую ветку, выполняя команду
-    `git checkout branch1`
-    ![image](screenshots/7.2.PNG)
+   - Получаем историю операций для ветки, выполняя команду `git log`\
+    ![image](screenshoots/8.PNG)
+   - Меняем текущую ветку, выполняя команду `git checkout branch1`\
+    ![image](screenshoots/9.PNG)
 8. Смотрим последние изменения
-   - Последние изменения отображаются, при выполнении команды
-    `git log`
-    ![image](screenshots/7.3.PNG)
+   - Последние изменения смотрим с помощью комманды `git log`\
+    ![image](screenshoots/10.PNG)
 9. Выполняем слияние в ветку master, разрешив конфликт
    - Выполняем слияение в ветку master, последовательно выполнив несколько команд
-     - переходим в ветку master, при помощи команды 
-      `git checkout master`
-      ![image](screenshots/9.1.PNG)
-     - начинаем слияние веток, использую команду
-      `git merge branch1`
-      ![image](screenshots/9.2.PNG)
-     - разрешаем конфликт, редактируя текстовый файл                                                
-      ![image](screenshots/9.3.PNG)
-      ![image](screenshots/9.4.PNG)
-     - закрепляем изменения командами
-      `git add .`
-      `git commit -m "<message>"`
-      ![image](screenshots/9.5.PNG)
+   	- переходим в ветку master, при помощи команды `git checkout master`\
+   	![image](screenshoots/11.PNG)
+  	- начинаем слияние веток, использую команду `git merge branch1`\
+  	![image](screenshoots/12.PNG)
+	- разрешаем конфликт, редактируя текстовый файл\                                         
+    	![image](screenshoots/13.PNG)
+    	![image](screenshoots/14.PNG)
+	- закрепляем изменения командами `git add .` `git commit -m "<message>"`\
+    	![image](screenshoots/15.PNG)
 10. Удаляем побочную ветку, после слияния
-    - Для удаления ветки, применим команду
-      `git branch --delete branch1`
-      ![image](screenshots/10.1.PNG)
+    - Для удаления ветки, применим команду `git branch --delete branch1`\
+      ![image](screenshoots/16.PNG)
 11. Фиксируем изменения
-    - Зафиксируем изменения выполнив команды
-      `git add .`
-      `git commit -m "<message>"`
+    - Зафиксируем изменения выполнив команды `git add .` `git commit -m "<message>"`
 12. Делаем откат коммита
-    - Выполняем откат последнего коммита, при помощи команды
-      `git reset --soft HEAD~`
-      ![image](screenshots/12.1.PNG)
+    - Выполняем откат последнего коммита, при помощи команды `git reset --soft HEAD~`\
+      ![image](screenshoots/18.PNG)
 13. Создадим ветку для отчета
-    - Создаем ветку для отчета, выполнив команду
-      `git branch -b report`
-      ![image](screenshots/14.1.PNG)
+    - Создаем ветку для отчета, выполнив команду `git branch -b report`
 14. Оформим отчет в файле README.md
 15. Получим историю операций в форматированном виде и сделаем финальную фиксацию изменений
-    - Получим историю, выполнив команду
-      `git log --pretty=medium --abbrev-commit `
-      ![image](screenshots/15.PNG)
+    - Получим историю, выполнив команду `git log --pretty=medium --abbrev-commit `\
+      ![image](screenshoots/19.PNG)
 16. Отправим локальные изменения в сетевое хранилище GitHub
-    - Для отправки локальных изменений в сетевое хранилище GitHub, выполним команду
-      `git push`
-    - Также удалим remote ветку branch, посредством команды
-      `git push origin --delete branch1`
+    - Для отправки локальных изменений в сетевое хранилище GitHub, выполним команду `git push`
+    - Также удалим remote ветку branch, посредством команды `git push origin --delete branch1`
 
-##### Вывод:
+#### Вывод:
 Нам удалось изучить базовые возможности системы управления версиями, мы получили опыт работы с Git Api, опыт работы с локальным и удаленным  репозиторием.
